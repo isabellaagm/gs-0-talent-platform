@@ -79,7 +79,7 @@ A API é composta por:
 ## 📦 Docker Hub
 A imagem também está disponível publicamente no Docker Hub:
 
-**https://hub.docker.com/r/isabellaagm/gs-0-talent-platform**
+👉 **https://hub.docker.com/r/isabellaagm/gs-0-talent-platform**
 
 ---
 

@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - 'release'
+      - 'hotfix'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Give execute permission to mvnw
+        run: chmod +x ./mvnw
+
+      - name: Build and test with Maven
+        run: ./mvnw -B test
+
+      - name: Build Docker image (validation only)
+        run: |
+          docker build -t gs-0-talent-platform-ci:latest .
