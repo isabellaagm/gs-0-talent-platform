@@ -1,5 +1,7 @@
 # gs-0-talent-platform
+
 ## 🎯 Tema da Global Solution
+
 **Plataformas que conectam talentos a projetos com propósito**
 
 Esse tema explora soluções tecnológicas que ajudam pessoas a encontrarem oportunidades profissionais alinhadas ao seu propósito, valores e impacto social.
@@ -9,6 +11,7 @@ A API criada neste projeto simula um serviço simples de integração que poderi
 ---
 
 ## 👥 Membros do Grupo
+
 - **Isabella Gomes Menezes** — RM 552327
 - **Ana Luiza de Paula Reis** — RM 552353
 
@@ -31,6 +34,7 @@ A API é composta por:
 ---
 
 ## 📚 Tecnologias Utilizadas
+
 - Java 17
 - Spring Boot 3
 - Maven Wrapper
@@ -43,6 +47,7 @@ A API é composta por:
 ## 🚀 Como executar o projeto
 
 ### ✔️ Pré-requisitos
+
 - Java 17+
 - Maven (ou o Maven Wrapper `mvnw` incluído)
 - Docker (opcional, para rodar via container)
@@ -65,6 +70,7 @@ A API é composta por:
 ### 🐳 Opção 2: Executar com Docker
 
 1.  **Build da imagem:**
+
     ```bash
     docker build -t SEUUSUARIO/gs-0-talent-platform:latest .
     ```
@@ -77,9 +83,10 @@ A API é composta por:
 ---
 
 ## 📦 Docker Hub
+
 A imagem também está disponível publicamente no Docker Hub:
 
-👉 **https://hub.docker.com/r/isabellaagm/gs-0-talent-platform**
+**https://hub.docker.com/r/isabellaagm/gs-0-talent-platform**
 
 ---
 
@@ -88,10 +95,12 @@ A imagem também está disponível publicamente no Docker Hub:
 Este projeto utiliza GitHub Actions para automação.
 
 #### 1. Versioning (push na `main`)
+
 - **Ação:** Cria tags automáticas baseadas em data/hora (`v-YYYY.MM.DD.HHMMSS`).
 - **Evidência:** Visível na aba "Actions" e "Tags" do repositório.
 
 #### 2. Continuous Integration (CI)
+
 - **Disparado em:** Push para `feature/**`, `release` ou `hotfix`.
 - **Executa:**
   - Build do projeto
@@ -99,6 +108,7 @@ Este projeto utiliza GitHub Actions para automação.
   - Build da imagem Docker (para validação)
 
 #### 3. Continuous Delivery (CD)
+
 - **Disparado em:** Pull Request para a branch `develop`.
 - **Executa:**
   - Build da aplicação
